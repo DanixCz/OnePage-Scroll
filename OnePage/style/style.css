@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body ,html{
+    margin: 0px;
+    font-family: "Chakra Petch", sans-serif;
+    scroll-behavior: smooth;
+    /* Přidáme scroll snapping na ose y */
+    scroll-snap-type: y mandatory;
+}
+
+
+
+header{
+    display: flex;
+    background-color: black;
+    opacity: 70%;
+    justify-content: right;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+}
+
+.Navigation{
+    display: flex;
+    align-items: center;
+    margin-right: 28px;
+    gap: 50px;
+    font-size: 25px;
+}
+
+h1{
+    color: white;
+    font-size: 32px;
+    text-shadow: 0px 1px 4px black;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    text-shadow: 0px 0px 4px white;
+    font-weight: bold;
+}
+
+.Pages {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Toto zajistí, že každá sekce se zachytí při posunutí */
+    scroll-snap-align: start;
+}
+
+#Page1{
+    background-image: url(/Pictures/ObamaPrism.jpeg);
+}
+
+#Page2{
+    background-image: url(/Pictures/ObamaPrism2.webp);
+}
+
+#Page3{
+    background-image: url(/Pictures/ObamaPrism3.webp);
+}
